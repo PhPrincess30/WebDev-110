@@ -1,0 +1,286 @@
+/*Style sheet for personal index.html page. The following are conigurations for all element styels. Organized from top to bottom, id being placed last. Date created: 1/31/2016 
+Author: Bonnie Frieden */
+
+/*default style conigurations for entire page. */
+body {
+	  background-color: #f2efff; 
+	  color: #402060; 
+	  font-family: arial, helvetica, sans serif; 
+	  background-image: url(images/purple.jpg);
+   }
+ /* control size and margins of content on page */  
+#wrapper {
+	width: 80%; min-width: 700px; max-width: 1024px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #f2efff;
+	box-shadow: 9px 9px 9px  #202020;
+	text-align: center;
+}
+	   
+/*congifurations for image inside header. 2/15/2016
+image border problem: constant white border that css could not get rid off. Realized this was part of the image. Solution: recropped image.2/21/2016
+fixed header image size problem. 2/28/2016*/
+header {
+	background-image: url(images/header.png);
+	background-color: #402060;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100px;
+	} 
+/* fixed header image overflowing when screen was reduced or viewed on moblie device. 2/28/2016*/
+h1 {
+	margin: 0;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+/* accessability skip to content link 4/3/2016 */
+.skipnav {
+	display: block;
+	margin-top: 1em;
+	padding-left: 1.5em;
+	float: left;
+	color: #000000;
+}
+
+.skipnav a {
+	color: #000000;
+}
+
+
+.skipnav a:hover {
+	color: #cc0000;
+}
+
+img {
+	
+	border-style: none;
+}
+
+/*Styling for welcome paragraph. 2/19/2016 */
+.welcome {
+	font-family: "Brush Script MT", cursive, arial, sans-serif;
+	font-size: 1.5em;
+	text-align: center;
+}
+	
+/*Moved nav to float left a vertial navigation bar. 2/28/2016 */ 
+nav {
+	float: left;
+	width: 150px;
+	font-weight: bold;
+	color: #402060;
+	letter-spacing: 0.1em;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0; 
+	padding: 0;
+}
+nav a {
+	text-decoration: none;
+	padding: 20px;	
+	display: block;
+	background-color: #f2efff;
+	border-bottom: 1px solid #979aaa;	
+}
+
+nav a:link {
+    color: #402060;
+}
+
+nav a:visited {
+    color: #aa00cc;
+}
+
+nav a:hover {
+    color: #ffffff;
+	background-color: #cccccc;
+}
+
+
+/*Configure main to float to the right as part of a 2 column lay out. 2/28/2016 */
+main {
+	padding: 10px 20px 30px 20px;
+	margin-left: 150px;
+	margin-bottom: 0;
+	background-color: #989aaa;
+	overflow: auto;
+}
+/* Css for new table. added 3/13/2016 */
+table {
+	width: 90%;
+	border-collapse: collapse;
+	border: 2px solid #402060;
+	text-align: center;
+	background-color: #f2efff;
+	color: #402060;
+	margin: auto;
+
+}
+
+th {
+	border: 2px solid #402060;
+	text-align: center;
+	font-family: Papyrus, arial, helvetica, sans-serif;
+	padding: 1em;
+
+}
+
+tr:nth-of-type(even) {
+	background-color: #cccccc; 
+}
+
+td a {
+	font-family: cursive, arial, sans-serif;
+	text-decoration: none;
+}
+
+td a:link { 
+	color: #402060;
+}
+
+td a:visited {
+	color: #402060;
+}
+
+td a:hover {
+	color: #aa00cc;
+}
+
+#more {
+	color: #330000;
+	font-weight: bold;
+}
+
+#details {
+	display: none;
+}
+
+.heading {
+	background-color: #d9b3ff; 
+	color: #402060;
+	font-size: 1.5em;
+}
+
+td {
+	border: 2px solid #402060;
+	padding: 10px;
+	font-family: cursive, arial, helvetica, sans-serif;
+}
+
+/*Update 3/20/2016  css styling for contact from */
+
+fieldset {
+	margin: auto;
+	width: 75%;
+	font-family: cursive, arial, helvetica, sans-serif;
+	font-size: 1em;
+	background-color: #f2efff;
+	border: 2px solid #402060;
+}
+
+legend {
+	text-align: left;
+	margin-bottom: 1em;
+	background-color: #f2efff;
+	border-top: 2px solid #402060;
+}
+
+label {
+	float: left;
+	display: block;
+	text-align: right;
+	width: 8em;
+	padding-right: 0.5em;
+}
+
+input, textarea {
+	display: block;
+	margin-bottom: 1em;
+}
+
+#mySubmit {
+	margin-left: 10em;
+}
+
+#myReset {
+	margin-left: 10em;
+}
+
+
+/* styling for span coming soon 2/15/2016 */	 
+.soon { 
+	color: #c70000; 
+	font-style: italic;
+	text-shadow: 1px 1px 1px #666;
+}
+
+.email {
+	font-family: cursive, arial, helvetica, sans-serif;
+	font-size: 1.5em;
+	
+}
+
+/*button to go back to top of page 3/29/2016
+update: 04/10/2016  */
+
+#button {
+	color: #cc0000;
+	background: #d9b3ff;
+	border-radius: 5px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	padding: 8px 10px;
+	font: papyrus, arial, verdana, sans-serif;
+	font-size: 1.5 em;
+	text-align: center;
+	float: right;
+	border: 2px solid #402060;
+}
+
+
+button a {
+	text-decoration: none;
+}
+
+/*configurations for footer updated 3/5/2016*/	 
+footer {
+		font-size: .74em;
+		font-family: cursive, arial, verdana, sans serif; 
+		font-style: italic;
+		text-align: left;
+		padding: 20px 20px;
+		color: #f2efff;
+		background-color: #402060;
+		clear: both;
+}
+
+footer ul {
+	text-align: left;
+	list-style-type: none;
+}
+ footer li {
+	
+	display: inline;
+	margin: 10px;
+}
+
+footer a {
+	text-decoration: none;
+}
+
+footer li a:link {
+    color: #ffffcc;
+}
+
+footer li a:visited {
+    color: #f2eab7;
+}
+
+footer li a:hover {
+    color: #ff00ff;
+}

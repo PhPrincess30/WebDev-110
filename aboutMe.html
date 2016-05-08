@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Content here is read by the browser and displayed in the tab of the webpage. Title displays title of the website and what content is displayed there. meta tags contain data that help search engines locate the webpage as part of a search. Css style sheet is linked here. This page is titled About me. Not much a writer, so I made a breif paragraph about how I came to take this class and why. -->
+	<head> 
+		<title>About Me</title>
+		<meta name="description" content="About Me. How got into this class. Why I want to learn HTML/CSS.">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="index.css">
+		<link rel="stylesheet" href="aboutMe.css">
+		<link rel="stylesheet" href="indexmobile.css">
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	</head>
+<!--Main are of the web page. Content here is displayed in the web browser and seen by the user. HTML5 uses wireframe tags to organize conten into more specific categories, such as header, nav, main and footer. Again for consistency header, nav and footer are the same arcoss all pages.-->
+<body>
+	<div id="wrapper">
+	<!--Title and salutation-->
+	<header>
+		<h1>CSWB 110 Bonnie Frieden</h1>	
+	</header>
+	<!--navigation bar/menu; updated with a ul 2/28/2016 -->
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="aboutMe.html">About Me</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+			</ul>
+		</nav>
+	<main>
+<!--Brief paragraph about me. I might add more to is as I think of more things to write. They <span> was added for use in styling class later on. I want to style my signature using a pretty font.-->
+           <h2>About Me</h2><br>
+				
+					<img src="images/bonnie.JPG" alt="Bonnie Frieden" class="bonnie"><p class="bio">Welcome to my little corner of the internet. A few years ago I started teaching myself how to code and fell in love and haven't stopped since. </p>
+					<p class="bio">I started with php, SQL and javascript. Great languages to learn, but I had no idea how to use html and css to add sturcture and beauty to my projects. Neither did I now how to transfer my projects to the internet. I didn't want to be the only one enjoying my work, I wanted to share what I had created with others. So, I decided to go back to the basics. That's why I'm taking this class. To add a proper foundation to what I already know and create my first real website.</p>
+					<span class="bio2">Thanks for stopping by</span>
+					<span class="mobile">Thanks for stopping by</span><br>
+					<span class="signature"> Bonnie Frieden</span>
+					<span class="mobile">Bonnie Frieden</span>
+			
+</main>
+	<!--personal signature and copyright line-->
+	<footer>
+		 <!--changed footer nav to a plain unordered list to keep styling from getting mixed. 2/29/2016-->
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="aboutMe.html">About Me</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="http://csisweb.palomar.edu/~Fri73575/sitemap.html">Sitemap</a></li>
+		</ul>
+		<br>
+		Copyright &copy; 2016 by Bonnie Frieden
+		<p>Last modified on :
+				<script>
+					document.write(document.lastModified);
+				</script>
+			</p>
+			
+	</footer>
+</div>
+</body>
+<!--the end; PhpPrincess-->
+</html>

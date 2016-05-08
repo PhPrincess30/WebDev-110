@@ -1,0 +1,26 @@
+/* css for blog page 
+3/28/2016 ran validation and fixed errors*/ 
+
+.blog {
+   font-family: cursive, arial, sans-serif;
+   font-size: 2em;
+   font-weight: bold;
+   background-color: #402060;
+   color: #f2efff;
+   padding: 5px;
+}
+
+h2 {
+	 background-color: #d9b3ff; 
+	 color: #402060;
+	 font-family: cursive, arial, sans-serif;
+	 font-weight: bold;
+	 font-size: 1.5em;
+	 padding: 1em;
+}
+
+article p {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 1em;
+	text-align: left;
+}

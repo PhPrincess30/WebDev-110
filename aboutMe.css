@@ -1,0 +1,62 @@
+/* Styling sheet for about me and contact page. created 2/16/2016 
+3/28/2016 ran validation and fixed errors.
+*/
+
+/* About me paragraphs. added 2/16/2016 */
+p  {
+	font-family: cursive, arial, sans-serif; 
+	}
+	
+/* styles for About Me header added 2/16/2016 */
+h2 {
+	background-color: #ffff4d;
+	font-family: papyrus, arial, sans serif;
+	line-height: 200%;
+	text-align: center;
+	border-bottom: 2px dashed #402060;
+	}	
+
+.contact {
+	padding: 25%;
+}
+	
+/*styling for email contact added 2/16/2016 */
+.email {
+	line-height: 200%;
+	font-family: cursive, arial, verdana, sans serif;
+	font-size: 1.5em;
+	padding-left: 15px;
+}
+
+/* styling for biography paragraph 2/16/2016 */
+.bio {
+	font-family: cursive, arial, sans-serif;
+	padding: 1em;
+	text-align: left;
+	font-size: 1em;
+}
+
+.bio2 {
+	font-family: cursive, arial, sans-serif;
+	padding: 1em;
+	text-align: left;
+	font-size: 1em;
+}
+/* styling for signature line. 2/16/2016 */
+.signature {
+	font-family: "Brush Script MT", cursive, arial, sans-serif;
+	font-size: 2em;
+	text-align: center;
+	padding-left: 50px;	
+}
+
+.mobile {
+	display: none;
+}
+
+/* float image of me. added 2/29/2016 */
+.bonnie {
+	clear: left;
+	max-width: 100%;
+	height: auto;
+}

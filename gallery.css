@@ -1,0 +1,24 @@
+/*Css for photo gallery */
+
+#gallery { 
+	width: 66%;
+	margin-left: 25%;
+	position: relative;
+	font-family: arial, helvetica, sans serif; 
+	text-align: center;
+	overflow: hidden;
+}
+
+.PhotoTitle {
+	font-family: papyrus, arial, sans serif;
+	font-size: 3em;
+	text-align: center;
+}
+
+
+#gallery img { 
+	border-style: none; 
+	margin-left: auto;
+	margin-right: auto;
+}
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Content here is read by the browser and displayed in the tab of the webpage. Title displays title of the website and what content is displayed there. meta tags contain data that help search engines locate the webpage as part of a search. Css style sheet is linked here. This page is my contact page. This will have my name and email listed. -->
+<head>
+	<title>Contact Me</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Contact me for more information. Fill out form below.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="indexmobile.css">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<!--4/24/2016 added JavaScript form validation here in the head-->
+	<script>
+		function validateForm() {
+			if (document.forms[0].myName.value == "") {
+				alert("Name field cannot be empty");
+				return false;
+			}
+			
+			if (document.forms[0].myEmail.value == "") {
+				alert("Must have email.");
+				return false;
+			}
+			
+			if (document.forms[0].myComments.value == "") {
+				alert("Must leave a comment");
+				return false;
+			}
+			alert("Thank You! your form has been submitted");
+			return true;
+		}
+	</script>
+</head>
+<!--Main area of the web page. Content here is displayed in the web browser and seen by the user. HTML5 uses wireframe tags to organize conten into more specific categories, such as header, nav, main and footer. Thought the content regarding contact information is sparse, to maintain consistency, the header, nav and footer elements will retain the same content as the other pages.-->
+<body>
+	
+	<div id="wrapper">
+		<!--Title and salutation-->
+		<header>
+			<h1>CSWB 110 Bonnie Frieden</h1>
+		</header>
+		<!--navigation bar/menu; updated with a ul 2/28/2016 -->
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="aboutMe.html">About Me</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+			</ul>
+		</nav>
+		<main>
+			<!--Contact information. Added form 3/20/2016. Need to add script action to form. -->
+			<form action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return validateForm();">
+				<fieldset>
+					<legend>Contact Me</legend>
+						<label for="myName">*Name:</label>
+							<input type="text" name="Name" id="myName" size="15">
+						<label for="myEmail">*E-mail:</label>
+							<input type="email" name="email" id="myEmail" size="15">
+						<label for="myComments">*Comments:</label>
+							<textarea name="comments" id="myComments" rows="2" cols="20"></textarea>
+						<input type="submit" value="Send Now" id="mySubmit">
+						<input type="reset" value="Reset" id="myReset">
+				</fieldset>
+			</form>
+			<div class="contact">
+				<span class="email">Bonnie Frieden</span><br>
+				<span class="email">email: bcfrieden@yahoo.com</span>
+			</div>
+				
+		</main>
+		<!--personal signature and copyright line-->
+		<footer>
+		 <!--changed footer nav to a plain unordered list to keep styling from getting mixed. 2/29/2016-->
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="aboutMe.html">About Me</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="http://csisweb.palomar.edu/~Fri73575/sitemap.html">Sitemap</a></li>
+			</ul>
+			Copyright &copy; 2016 by Bonnie Frieden
+			
+			<p>Last modified on :
+				<script>
+					document.write(document.lastModified);
+				</script>
+			</p>
+			
+		</footer>
+	</div>
+<!--the end; PhpPrincess-->
+</body>
+</html>

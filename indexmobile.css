@@ -1,0 +1,276 @@
+ /* css to optimize viewing on tablets  3/36/2016 */
+ @media only screen and (max-width: 1024px) {
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #f2efff;
+	background-image: none;
+	font-family: arial, helvetica, sans-serif;
+}
+
+#wrapper { 
+	width: auto; 
+	min-width: 0;
+	margin: 0;
+	box-shadow: none;
+}
+
+
+main {
+	margin: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 1em;
+	padding-right: 1em;
+	font-size: 90%;
+	font-family: arial, helvetica, sans-serif;
+}
+
+h1 {
+	margin: 0;
+	text-align: center;
+	font-size: 2em;
+	line-height: 200%;
+	font-family: arial, helvetica, sans-serif;
+}
+
+h2 { 
+	font-size: 100%;
+}
+
+p { 
+	font-size: 90%; 
+	font-family: arial, helvetica, sans-serif;
+}
+
+nav { 
+	float: none;
+	width: auto;
+}
+
+nav li { 
+	display: inline-block; 
+} 
+
+nav a { 
+	padding: 1em;
+	font-size: 1.2em;
+	border-style: none;
+   
+}	
+
+nav ul {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+.bio {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 90%;
+}
+
+.mobile {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 90%;
+}
+
+.signature {
+	display: none;
+}
+
+.bio2 {
+	display: none;
+}
+
+.details {
+	padding-left: 20%;
+	padding-right: 20%;
+	font-family: arial, helvetica, sans-serif;
+}
+
+td {
+	font-family: arial, helvetica, sans-serif;
+}
+
+td a {
+	font-family: arial, helvetica, sans-serif;
+}
+
+.contact {
+	padding: 1em;
+}
+
+td a:link { 
+	color: #000000;
+}
+
+td a:visited {
+	color: #402060;
+}
+
+/*update 3/20/2016  added styles for contact form */
+
+fieldset {
+	margin: auto;
+	width: 75%;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 1em;
+}
+
+legend {
+	text-align: left;
+	margin-bottom: 1em;
+}
+
+label {
+	float: left;
+	display: block;
+	text-align: right;
+	width: 8em;
+	padding-right: 0.5em;
+}
+
+input, textarea {
+	display: block;
+	margin-bottom: 1em;
+}
+
+#mySubmit {
+	margin-left: 10em;
+}
+
+footer {
+	margin: 0;
+	font-family: arial, helvetica, sans-serif;
+}
+
+}
+		 
+/* css to optimize viewing on smartphone devices. added 3/6/2016 */
+@media only screen and (max-width: 768px) {  
+
+body {
+	font-family: arial, helvetica, sans-serif;
+}
+main { 
+	padding-top: 5em;
+	padding-left: 0.5em;
+	font-family: arial, helvetica, sans-serif;
+}
+
+header {
+	background-image: url(images/header-min.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 80px;
+}
+
+nav li { 
+	display: block; 
+}
+nav ul { 
+	text-align: center;
+}
+
+nav a { 
+	display: block;
+	padding: 0.2em;
+	font-size: 1.3em;
+	border-bottom: 1px solid #989aaa;
+}
+
+/*update 3/20/2016  css styling for conact form */
+fieldset {
+	margin: auto;
+	width: 75%;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 1em;
+}
+
+legend {
+	text-align: left;
+	margin-bottom: 1em;
+}
+
+label {
+	float: left;
+	display: block;
+	text-align: right;
+	width: 8em;
+	padding-right: 0.5em;
+}
+
+input, textarea {
+	display: block;
+	margin-bottom: 1em;
+}
+
+#mySubmit {
+	margin-left: 10em;
+}
+
+
+h1 {
+	font-size: 1.5em;
+	line-height: 120%;
+}
+
+
+h2 {
+	font-size: 1.5em;
+}
+
+
+.soon { 
+	color: #c70000; 
+	font-style: italic;
+	text-shadow: none;
+}
+
+
+.email {
+	line-height: 120%;
+	font-family: arial, helvetica, sans serif;
+	font-size: 1.5em;
+	padding-left: 0;
+}
+
+.contact {
+	padding: 0;
+	margin-bottom: 1em;
+	font-family: arial, helvetica, sans-serif;
+}
+
+.bio {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 90%;
+}
+
+.mobile {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 90%;
+}
+
+.signature {
+	display: none;
+}
+
+.bio2 {
+	display: none;
+}
+
+.bonnie {
+	display: none;
+}
+
+.blog {
+   font-family: arial, helvetica, sans-serif;
+   font-size: 1.5em;
+   font-weight: bold;
+   background-color: #402060;
+   color: #f2efff;
+   padding: 0;
+}
+}
+

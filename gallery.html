@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Content here is read by the browser and displayed in the tab of the webpage. Title displays title of the website and what content is displayed there. meta tags contain data that help search engines locate the webpage as part of a search. Css style sheet is linked here. This page is my contact page. This will have my name and email listed. -->
+<head>
+	<title>Gallery</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Gallery of cats. Work in progess, final project will contain javascrip to control objects on page. Cat Adventure, Cat Love, Cat Nap, Club Cat.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="gallery.css">
+	<link rel="stylesheet" href="indexmobile.css">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script><!--Script to access jquery library-->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script><!--script to access the fotorama plugin-->
+<link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!--Css for fotorama plugin-->
+</head>
+<!--Main area of the web page. Content here is displayed in the web browser and seen by the user. HTML5 uses wireframe tags to organize conten into more specific categories, such as header, nav, main and footer. Thought the content regarding contact information is sparse, to maintain consistency, the header, nav and footer elements will retain the same content as the other pages.-->
+<body>
+	<div id="wrapper">
+		<!--Title and salutation-->
+		<header>
+			<h1>CSWB 110 Bonnie Frieden</h1>
+		</header>
+		<!--navigation bar/menu; updated with a ul 2/28/2016 -->
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="aboutMe.html">About Me</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+			</ul>
+		</nav>
+		<main>
+			<h3 class="PhotoTitle">My Photo Gallery</h3>
+			<div id="gallery" class="fotorama" data-autoplay="true">
+			
+				<img src="images/catadv.jpg" width="100" height="75"data-caption="Cat Adventure" alt="Cat Adventure">
+				
+					   
+					  
+				<img src="images/catlove.jpg" width="100" height="75" data-caption="Cat Love" alt="Cat Love">
+									  
+
+				<img src="images/catnap.jpg" width="100" height="75"data-caption="Cat Nap" alt="cat nap">
+										  
+					  
+			    <img src="images/clubcat.jpg" width="100" height="75" data-caption="Club Cat" alt="club cat">
+								
+					
+			</div>
+		</main>
+		<!--personal signature and copyright line-->
+		<footer>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="aboutMe.html">About Me</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="http://csisweb.palomar.edu/~Fri73575/sitemap.html">Sitemap</a></li>
+			</ul>
+			Copyright &copy; 2016 by Bonnie Frieden
+			
+			<p>Last modified on :
+				<script>
+					document.write(document.lastModified);
+				</script>
+			</p>
+			
+		</footer>
+	</div>
+<!--the end; PhpPrincess-->
+</body>
+</html>
