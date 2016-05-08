@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Content here is read by the browser and displayed in the tab of the webpage. Title displays title of the website and what content is displayed there. meta tags contain data that help search engines locate the webpage as part of a search. Css style sheet is linked here. Added meta tag description for SEO on each page on 4/24/2016 -->
+	<head> 
+		<title>CSWB110 HTML/CSS</title>
+		<meta charset="utf-8">
+		<meta name="description" content="CSWB 110 student website for Bonnie Frieden. Welcome home page. Table of links to case studies and other work assignments. JavaJam Coffee and Fish Creek Animal Hospital. Focus on HTML/CSS and introduction to basics of Java, JavaScript and Jquery.">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="aboutMe.css">
+		<link rel="stylesheet" href="index.css">
+		<link rel="stylesheet" href="indexmobile.css">
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+			</script>
+		<![endif]-->
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('#more').hover(function() {	
+					$('#details').toggle() 
+				});
+			});
+		</script>
+	</head>
+<!--Main are of the web page. Content here is displayed in the web browser and seen by the user. HTML5 uses wireframe tags to organize conten into more specific categories, such as header, nav, main and footer-->
+<body>
+	
+	<div id="wrapper">
+		<!--Title and salutation; added banner image. 2/15/2016 -->
+		<header>
+			<h1>CSWB 110 Bonnie Frieden</h1>
+			<div class="skipnav"><a href="#content">Skip to Content</a></div>
+		</header>
+		<!--navigation bar/menu; updated with a ul 2/28/2016 -->
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="aboutMe.html">About Me</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+			</ul>
+		</nav>
+			<main id="top" id="content">
+				
+		<!--List of links to case studies and web research projects. anchor tags are used to create links to other documents. These anchor tags are relative links. Meaning all files are saved to the same folder.<h1> and <h2> tags are used to define headings and subheadings. <p> tags define a small area of content. <br> tag forces content begin on the next line creating a more pleasing visual experience. <em> tags used to emphasize text, in italics.-->
+		<!--2/19/2016. adjustd p tags-->
+		 <p class="welcome">Welcome to my home page!<p>
+		 <button id="button"><a href="#bottom">Jump to Bottom</a></button>
+		<!--Added Table to organize links. 3/13/2016-->
+			<table boder="1">
+			<tr class="heading">
+				<th>Chapter</th>
+				<th colspan="2">Assignment</th>
+				<th>Notes</th>
+			</tr>
+			<tr>
+				<th>1</th>
+				<td colspan="2"><a href="Ch1_research.pdf">Web Research Project PDF</a></td>
+				<td> Researched three websites for web developers.</td>
+			</tr>
+			<tr>
+				<th>2</th>
+				<td class="caselink"><a href="javaJam/tutorial2/index.html">JavaJam Coffee House</a></td>
+				<td class="caselink"><a href="fishCreek/tutorial2/index.html">FishCreek Animal Hospital</a></td>
+				<td>Introduction to HTML and basic elements. Ordered, unordered and description lists. Anchor elements for hyperlinking. </td>
+			</tr>
+			<tr>
+				<th>3</th>
+				<td><a href="javaJam/tutorial3/index.html">JavaJam Coffee House</a></td>
+				<td><a href="fishCreek/tutorial3/index.html">FishCreek Animal Hospital</a></td>
+				<td>Introduction to CSS3. Use of color and fonts . Class vs Id. Linking to a style sheet.</td>
+			</tr>
+			<tr>
+				<th>4</th>
+				<td><a href="javaJam/tutorial4/index.html">JavaJam Coffee House</a></td>
+				<td><a href="fishCreek/tutorial4/index.html">FishCreek Animal Hospital</a></td>
+				<td> Adding visual elements. Graphic types gif, jpg and png. Background images, image map and image positioning. </td>
+			</tr>
+			<tr>
+				<th>5</th>
+				<td><a href="javaJam/tutorial5/index.html">JavaJam Coffee House</a></td>
+				<td><a href="fishCreek/tutorial5/index.html">FishCreek Animal Hospital</a></td>	
+				<td>Website organization, designing for accessibility and principles of visual design. 
+				Use of color and graphics in regards to your target audience. Navigation, layout and mobile design.</td>	
+			</tr>
+			<tr>
+				<th>5</th>
+				<td><a href="javaJam/tutorial5/wk5JavaJam.pdf">JavaJam Coffee House PDF</a></td>
+				<td><a href="fishCreek/tutorial5/wk5FishCreek.pdf">FishCreek Animal Hospital PDF</a></td> 
+				<td>Accessablity suggestions write up</td>	
+			</tr>
+			
+			<tr>
+				<th>6</th>
+				<td><a href="javaJam/tutorial6/index.html">JavaJam Coffee House</a></td>
+				<td><a href="fishCreek/tutorial6/index.html">FishCreek Animal Hospital</a></td>
+				<td> Page Layout. CSS box model. Clearing, floating and positioning elements. Two column page layout. Pseudo classes for hyperlink nav areas.</td>
+			</tr>
+			<tr>
+				<th>7</th>
+				<td><a href="javaJam/tutorial7/index.html">JavaJam Coffee House</a></td>
+				<td><a href="fishCreek/tutorial7/index.html">FishCreek Animal Hospital</a></td>
+				<td>Three column page layout and mobile design display. </td>
+			</tr>
+			<tr>
+				<th>8</th>
+				<td><a href="javaJam/tutorial8/index.html">JavaJam Coffee House</a></td>
+				<td><a href="fishCreek/tutorial8/index.html">FishCreek Animal Hospital</a></td>
+				<td> Using tables to organize content. Use of CSS in configuring table elements.</td>
+			</tr>
+			<tr>
+				<th>9</th>
+				<td><a href="javaJam/tutorial9/index.html">JavaJam Coffee House</a></td>
+				<td><a href="fishCreek/tutorial9/index.html">FishCreek Animal Hospital</a></td>
+				<td> Forms and how to configure them using css and adding accessibility. A brief reference to server side scripting languages, that are used to process information gathered in the forms. Each case study had a page with a form added to the site. request for job information and contact information.</td>
+			</tr>
+			<tr>
+				<th>10</th>
+				<td colspan="2"><a href="Ch10Report.pdf">Chapter 10 Write up</a></td>
+				<td>Testing and analysis of my personal site.</td>
+			</tr>
+			<tr>
+				<th>11</th>
+				<td><a href="javaJam/tutorial11/index.html">JavaJam Coffee House</a></td>
+				<td><a href="fishCreek/tutorial11/index.html">FishCreek Animal Hospital</a></td>
+				<td>Adding media. Several different ways to add media to a webpage. While HTML5 has the new audio and video elements that natively supports those media types, they are not all supported by many popular browers. Provide fallback links, or the option for a plugin. For accessibility, provide text sources for audio and video files. I will be adding an image gallery that makes use of the transform and transiotion properties. If I can get a friend to make video for me I will do that.</td>
+			</tr>
+			<tr>
+				<th>12</th>
+				<td><a href="javaJam/tutorial12/index.html">JavaJam Coffee House</a></td>
+				<td><a href="fishCreek/tutorial12/index.html">FishCreek Animal Hospital</a></td>
+				<td>Shopping on the internet and how it works. A little bit of cybersecurity, digital certificates and encryption methods. I have an intereset in security, I may end up working the security sector of the IT world.</td>
+			</tr>
+			<tr>
+				<th>13</th>
+				<td><a href="javaJam/tutorial13/index.html">JavaJam Coffee House</a></td>
+				<td><a href="fishCreek/tutorial13/index.html">FishCreek Animal Hospital</a></td>
+				<td>Web site promotion. I'm not one to toot my own horn, my portfolio site will be used to show my work to potential employers and to hone my skills as a developer. On the flip side, this informaiton is useful, I should be familiar with SEO and how search engines opperate. Current job opennings for web developers list SEO knowledge as a required skill.</td>
+			</tr>
+			<tr>
+				<th>14</th>
+				<td><a href="javaJam/tutorial14/index.html">JavaJam Coffee House</a></td>
+				<td><a href="fishCreek/tutorial14/index.html">FishCreek Animal Hospital</a></td>
+				<td>First steps into programming with javascript and jquery. Note, Java and javascipt are not the same thing. Java is used more with creating software, whereass Javascript is a client side programming language. Jquery is a javascript library, allowing you to use the most commonly used tasks with just a few lines of code. Since I'm new to javascrip and jquery, I'm just adding a few simple things, like a welcome popup, a last modifed datae and a photo library.</td>
+			</tr>
+			<tr>
+				<th>Extra Work</th>
+				<td colspan="2"><a href="BusFinder/FindBusStop.html">School Bus Project</a></td>
+				<td> An Idea I have. <a href="#" id="more">more</a> 
+				<div id="details">My local school district has no way of digitally determining if a student is elegible for transportation to school. Currently only a few schools offer busing, with the critera that a student must live more than 2 miles from school. My web app idea is that this from will be used to drop a pin on a map showing the schools location and a shaded 2 mile radius. More research is needed to figure out how to drop a pin on a map.</div></td> 
+			</table>
+			<button id="button"><a href="#top">Back to Top</a></button>
+			<br id="bottom">
+		</main>
+		
+		<!--personal signature and copyright line-->
+		<footer>
+			 <!--changed footer nav to a plain unordered list to keep styling from getting mixed. 2/29/2016;
+			 4/24/2016 added site map to footer nav-->
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="aboutMe.html">About Me</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="http://csisweb.palomar.edu/~Fri73575/sitemap.html">Sitemap</a></li>
+			</ul>
+		<!--added Javascript write method with lastModified	property. 4/24/2016-->
+			<br>
+			Copyright &copy; 2016 by Bonnie Frieden
+			<p>Last modified on :
+				<script>
+					document.write(document.lastModified);
+				</script>
+			</p>
+			
+		</footer>
+	</div>
+</body>
+<!--the end; PhpPrincess-->
+</html>
